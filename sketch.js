@@ -45,6 +45,8 @@ function setup() {
   
   score = 0;
   
+  obstacle.debug = true;
+  
 }
 
 function draw() 
