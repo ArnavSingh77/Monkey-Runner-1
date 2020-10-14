@@ -45,7 +45,7 @@ function setup() {
   
   score = 0;
   
-  obstacle.debug = true;
+  obstaclesGroup.debug = true;
   
 }
 
