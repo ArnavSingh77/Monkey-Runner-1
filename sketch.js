@@ -15,6 +15,8 @@ function preload() {
   bananaImage = loadImage("banana.png");
   obstacleImage = loadImage("obstacle.png");
  
+   groundImage = loadImage("ground.png")
+  
 }
 
 
