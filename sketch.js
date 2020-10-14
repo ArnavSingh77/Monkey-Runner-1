@@ -5,7 +5,6 @@ var monkey , monkey_running
 var banana ,bananaImage, obstacle, obstacleImage
 var FoodGroup, obstaclesGroup
 var survivalTime = 0;
-var ground;
 
 function preload() {
   
@@ -28,7 +27,7 @@ function setup() {
   monkey.addAnimation("running", monkey_running);
   monkey.scale = 0.1;
   
-  ground = createSprite(500,290,400,20);
+  ground = createSprite(500,290,1500,20);
   ground.velocityX= -4
   ground.x = ground.width /2;
   ground.log=(ground.x);
