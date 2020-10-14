@@ -39,13 +39,11 @@ function setup() {
   foodGroup = createGroup();
   
   
- monkey.setCollider("rectangle",0,0,400, 500);
+ monkey.setCollider("rectangle",0,10,400, 500);
  monkey.debug = false;
   
   
   score = 0;
-  
-  obstaclesGroup.debug = true;
   
 }
 
