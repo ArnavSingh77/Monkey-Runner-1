@@ -39,8 +39,8 @@ function setup() {
   foodGroup = createGroup();
   
   
- monkey.setCollider("rectangle",0,0,400, 500);
- monkey.debug = false;
+ monkey.setCollider("rectangle",-20,0,400, 500);
+ monkey.debug = true;
   
   
   score = 0;
@@ -50,7 +50,7 @@ function setup() {
 function draw() 
 {
   
-  background("lightGreen");
+  background("blue");
   //displaying Survival Time
   textSize(20);
   fill("black");
