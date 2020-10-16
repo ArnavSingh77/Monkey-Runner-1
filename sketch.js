@@ -40,7 +40,7 @@ function setup() {
   
   
  monkey.setCollider("rectangle",-20,0,400, 500);
- monkey.debug = true;
+ monkey.debug = false;
   
   
   score = 0;
@@ -50,7 +50,7 @@ function setup() {
 function draw() 
 {
   
-  background("blue");
+  background("lightGreen");
   //displaying Survival Time
   textSize(20);
   fill("black");
@@ -126,6 +126,9 @@ function spawnObstacles()
     var obstacle = createSprite(600,260,10,40);
     obstacle.velocityX = -(6+score/80);
    
+     obstacle.setCollider("circle", 0, 0, 130);  
+     obstacle.debug = false;
+   
     //generate random obstacles
     var rand = Math.round(random(1,6));
     switch(rand)
@@ -143,6 +146,8 @@ function spawnObstacles()
       case 6: obstacle.addImage(obstacleImage);
               break;
       default: break;
+      
+      
     }
    
     //assign scale and lifetime to the obstacle           
